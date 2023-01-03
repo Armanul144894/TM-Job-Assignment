@@ -59,7 +59,7 @@
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="#doctor"
                     id="navbarDropdownMenuLink"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -80,7 +80,7 @@
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="#service"
                     id="navbarDropdownMenuLink"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -101,7 +101,7 @@
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="#pharmacy"
                     id="navbarDropdownMenuLink"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -126,18 +126,18 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="#about">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blogs</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#blog">Blogs</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link">FAQ</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQ</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -245,7 +245,7 @@
     <!-- Main section start -->
     <main>
       <!-- About section start -->
-      <section>
+      <section id="about">
         <div>
           <div class="text-center about-section">
             <h1>About Us</h1>
@@ -279,7 +279,7 @@
       <!-- About section end -->
 
       <!--Doctor Section Start-->
-      <section class="consultation-container">
+      <section id="doctor" class="consultation-container">
         <div class="consultation-section">
           <h1 class="text-center">Video Consultation from the Best doctors</h1>
           <p class="text-center">
@@ -496,7 +496,7 @@
       <!--Follow Section End-->
 
       <!-- Order Section Start -->
-      <section class="order-container my-5">
+      <section id="pharmacy" class="order-container my-5">
         <div>
           <div class="order-content text-center mb-5">
             <h1>Order Medicine Online from Popular Pharmacy Nearby</h1>
@@ -803,9 +803,9 @@
       <!-- Qualified section end -->
 
       <!--FAQ Section Start-->
-      <section class="faq-container my-5">
+      <section id="faq" class="faq-container my-5">
         <div>
-          <div class="text-center faq-section">
+          <div class="text-center faq-section mb-5">
             <h1>Frequently Asked Questions</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -1004,7 +1004,7 @@
       <!-- Patients section start -->
       <section class="patient-container my-5">
         <div>
-          <div class="text-center patient-section">
+          <div class="text-center patient-section mb-5">
             <h1>What Are The Patients Saying About us</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
@@ -1060,7 +1060,7 @@
       <!-- Patients section end -->
 
       <!-- News & Blogs section start -->
-      <section class="news-container mx-auto my-5">
+      <section id="blog" class="news-container mx-auto my-5">
         <div>
           <div class="text-center my-5 news-section">
             <h1>News & Blogs</h1>
@@ -1416,26 +1416,131 @@
           <button class="dot d-sm-block d-md-none d-lg-none"></button>
           <button class="dot d-sm-block d-md-none d-lg-none"></button>
         </div>
-
-        <!-- <div>
-          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-            <div class="col">
-              
-            </div>
-            <div class="col">
-              
-            </div>
-            <div class="col">
-              
-            </div>
-            <div class="col">
-              
-            </div>
-          </div>
-        </div> -->
       </section>
       <!-- News & Blogs section end -->
 
+      <!-- Contact section start -->
+      <section>
+        <section id="contact">
+          <h1 class="section-header">Contact Us</h1>
+
+          <div class="contact-wrapper">
+            <!-- Left contact page -->
+
+            <form
+              id="contact-form"
+              class="form-horizontal text-dark"
+              role="form"
+            >
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="NAME"
+                    name="name"
+                    value=""
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="EMAIL"
+                    name="email"
+                    value=""
+                    required
+                  />
+                </div>
+              </div>
+
+              <textarea
+                class="form-control"
+                rows="10"
+                placeholder="MESSAGE"
+                name="message"
+                required
+              ></textarea>
+
+              <button
+                class="btn btn-primary send-button"
+                id="submit"
+                type="submit"
+                value="SEND"
+              >
+                <div class="alt-send-button">
+                  <i class="fa fa-paper-plane"></i
+                  ><span class="send-text">SEND</span>
+                </div>
+              </button>
+            </form>
+
+            <!-- Left contact page -->
+
+            <div class="direct-contact-container">
+              <ul class="contact-list">
+                <li class="list-item">
+                  <i class="fa fa-map-marker fa-2x"
+                    ><span class="contact-text place"> Banani, Dhaka.</span></i
+                  >
+                </li>
+
+                <li class="list-item">
+                  <i class="fa fa-phone fa-2x"
+                    ><span class="contact-text phone"
+                      ><a href="tel:1-212-555-5555" title="Give me a call"
+                        >+8801234567890</a
+                      ></span
+                    ></i
+                  >
+                </li>
+
+                <li class="list-item">
+                  <i class="fa fa-envelope fa-2x"
+                    ><span class="contact-text gmail"
+                      ><a href="mailto:#" title="Send me an email"
+                        >tmbd@mail.com</a
+                      ></span
+                    ></i
+                  >
+                </li>
+              </ul>
+
+              <hr />
+              <ul class="social-media-list">
+                <li>
+                  <a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-github" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-codepen" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+              <hr />
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Contact section end -->
       <!-- Footer section start -->
       <section class="footer-container">
         <!-- Footer -->
